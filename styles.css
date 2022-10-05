@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* adds the google font to the entire page */
+    font-family: 'Abyssinica SIL', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* This has the css styles for the background image */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex; /* flex takes parent wrapper divs and ignores child divs*/
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav for logo image size */
+nav img{
+    width: 160px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+/* Adds style to the header saved, and login */
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+/* adding an a to the .nav-link ul li means its the undertag */
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+/* adds the underline affect to the homepage menu */
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
