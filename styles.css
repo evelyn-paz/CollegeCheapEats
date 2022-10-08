@@ -31,6 +31,44 @@ nav img{
     text-align: right;
 }
 
+/* Styles for the SearchBox */
+form{
+    background-color: black;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+input {
+    all: unset;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 8px 10px;
+}
+::placeholder{
+    color: white;
+    opacity: 0.7;
+}
+button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    
+  }
+svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 8px 10px;
+  }
+
 /* Adds style to the header saved, and login */
 .nav-links ul li {
     list-style: none;
