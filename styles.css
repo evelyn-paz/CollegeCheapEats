@@ -1,99 +1,150 @@
+:root{
+    --black:#000000;
+}
 *{
-    margin: 0;
-    padding: 0;
-    /* adds the google font to the entire page */
+    margin: 0; padding: 0;
+    box-sizing: border-box;
     font-family: 'Abyssinica SIL', serif;
-    font-family: 'Roboto', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: 2s linear;
 }
 
-/* This has the css styles for the background image */
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6em;
+    overflow-x: hidden;
 }
-nav{
-    display: flex; /* flex takes parent wrapper divs and ignores child divs*/
-    padding: 2% 6%;
-    justify-content: space-between;
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-/* nav for logo image size */
-nav img{
-    width: 160px;
+.left-side{
+    display: flex;
 }
-.nav-links{
-    flex: 1;
-    text-align: right;
+
+/* This logo section is for the CollegCheapEats heading */
+header .logo{
+    font-size: 2rem;
+    color: #727070;
+    font-weight: bolder;
+}
+/* Login Style */
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #8a8a8a;
+}
+header .navbar a:hover{
+    transition: all 0.5s;
+    color: var(--black);
+}
+
+/* Changes the heart icon color when hover */
+header .icons a{
+    font-size: 2.5rem;
+    color: #f36eae;
+    margin-left: 1.5rem;
+
+}
+header .icons a:hover{
+    transition: all 0.5s;
+    color: #f12f8d;
 }
 
 /* Styles for the SearchBox */
 form{
-    background-color: black;
+    background-color: rgb(179, 174, 174);
     width: 300px;
-    height: 44px;
+    height: 35px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    
 }
 input {
     all: unset;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abyssinica SIL', serif;
+    font-size: medium;
     color: white;
     height: 100%;
     width: 100%;
-    padding: 8px 10px;
+    padding: 6px 10px;
 }
 ::placeholder{
     color: white;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 button {
     all: unset;
     cursor: pointer;
     width: 44px;
-    height: 44px;
-    
+    height: 44px;   
   }
+/* magnifying icon */
 svg {
-    color: #fff;
+    color: white;
     fill: currentColor;
-    width: 24px;
-    height: 24px;
-    padding: 8px 10px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
   }
 
-/* Adds style to the header saved, and login */
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+/* Begins the styling for the second header */
+.nav-categories{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-/* adding an a to the .nav-link ul li means its the undertag */
-.nav-links ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 19px;
+
+section{
+    padding: 2rem 9%;
 }
 
-/* adds the underline affect to the homepage menu */
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: white;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url("images/Fruit\ Background\ smaller.png") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.nav-links ul li:hover::after{
-    width: 100%;
+.home .content{
+    max-width: 50rem;
 }
+.home .content h2{
+    font-size: 4rem;
+    color: black;
+}
+.home .content p{
+    font-size: 2rem;
+    color: #727070;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+
+  /* Adjust the size of content */
+  @media(max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+  }
