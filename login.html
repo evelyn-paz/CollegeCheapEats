@@ -3,10 +3,59 @@
 <html lang='en'>
 
 <head>
-    <h1> login coming soon..</h1>
+    <!--This means it adaps to the device the website is viewed on-->
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    
+    <!--Custom css file link-->
+    <link rel ="stylesheet" type= "text/css" href="signIn.css">
+
+    <!--Google signin client-->
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    
+<!--This just makes the website auto-refresh after 5 secs, needs to be removed when project finished-->
+    <meta http-equiv="refresh" content="5">
 </head>
 
 <body>
-
+    <main id="main-holder">
+        <h1 id="login-header">Login</h1>
+        
+        <div id="login-error-msg-holder">
+          <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        </div>
+        
+        <form id="login-form">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+          <input type="submit" value="Login" id="login-form-submit">
+          
+          <div id="my-signin2"></div>
+        <script>
+            function onSuccess(googleUser) {
+                console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+            }
+            function onFailure(error) {
+                console.log(error);
+            }
+            function renderButton() {
+                gapi.signin2.render('my-signin2', {
+                'scope': 'profile email',
+                'width': 240,
+                'height': 40,
+                'longtitle': true,
+                'theme': 'dark',
+                'onsuccess': onSuccess,
+                'onfailure': onFailure
+                });
+            }
+      </script>
+    
+      <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+          <!--Adds the forgot psw button-->
+      <input type="forgot password?" value="Forgot Password?" id="login-form-psw">
+          
+      </form>
+        
 </body>
 </html>
