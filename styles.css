@@ -1,5 +1,3 @@
-/* This is the style sheet for index.html */
-
 :root{
     --black:#000000;
 }
@@ -19,7 +17,6 @@ html{
     overflow-x: hidden;
 }
 
-
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -35,6 +32,50 @@ header{
 
 .left-side{
     display: flex;
+}
+
+/*-----------Recipes-----------------*/
+
+.quick-recipes{
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+    padding:0.5rem;
+    margin:2rem 0; 
+  }
+  
+.recipe{
+    display: block;
+}
+
+.recipes-list{
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 6rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+.recipe-img{
+    height: 15rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.recipe h5{
+    margin-bottom: 0;
+    margin-top: 0.25rem;
+    line-height: 1;
+    color: black;
+    font-size: medium;
+}
+
+.recipe p {
+    margin-bottom: 0;
+    line-height: 1;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+    color: black;
+    font-size: medium;
 }
 
 /* This logo section is for the CollegCheapEats heading */
@@ -111,11 +152,10 @@ svg {
     align-items: center;
 }
 
-
 section{
     padding: 2rem 9%;
 }
-
+/*------------Home------------- */
 .home{
     display: flex;
     align-items: center;
@@ -125,7 +165,7 @@ section{
     background-position: center;
 }
 .home .content{
-    max-width: 50rem;
+    max-width: 70rem;
 }
 .home .content h2{
     font-size: 4rem;
@@ -136,6 +176,22 @@ section{
     color: #727070;
     padding: 1rem 0;
     line-height: 1.5;
+}
+
+/*---------Footer----------*/
+.page-footer{
+    text-align: center;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #727070;
+}
+
+.page-footer p{
+    margin-bottom: 0;
+    color: white;
+    font-size: small;
 }
 
 
