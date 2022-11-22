@@ -79,6 +79,7 @@ header{
 }
 /* ---------breakfast--------- */
 .breakfast-home{
+    min-height: 100vh;
     display: inline;
     text-align: center;
     font-size: xx-large;
@@ -94,9 +95,11 @@ breakfast-home .h1{
 .breakfast-info{
     display: flex;
     align-items: center;
-
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .breakfast-list{
+    min-height: 50vh;
     display: grid;
     gap: 30rem;
     padding-bottom: 6rem;
@@ -261,7 +264,14 @@ section{
     color: white;
     font-size: small;
 }
-
+.french-footer{
+    text-align: center;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #727070;
+}
 
 
   /* Adjust the size of content */
