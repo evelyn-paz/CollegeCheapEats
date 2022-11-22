@@ -50,7 +50,7 @@ header{
 
 .recipes-list{
     display: grid;
-    gap: 1rem;
+    gap: 6rem;
     padding-bottom: 6rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -83,7 +83,7 @@ header{
     font-size: xx-large;
     color: black;
     padding:0.5rem;
-    margin:2rem 0; 
+    margin: 7rem 0;
   }
 
 breakfast-home .h1{
@@ -91,17 +91,20 @@ breakfast-home .h1{
 }
 
 .breakfast-info{
-  display: flex;
+    display: flex;
+    align-items: center;
+
 }
 .breakfast-list{
     display: grid;
-    gap: 1rem;
+    gap: 30rem;
     padding-bottom: 6rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .breakfast-img{
-   height: 15rem;
+    height: 30rem;
     border-radius: 0.25rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 .breakfast{
