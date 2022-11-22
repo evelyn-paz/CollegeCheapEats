@@ -77,6 +77,36 @@ header{
     color: black;
     font-size: medium;
 }
+/* ---------breakfast--------- */
+.breakfast-home{
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+    padding:0.5rem;
+    margin:2rem 0; 
+  }
+
+breakfast-home .h1{
+  text-align: center;
+}
+
+.breakfast-info{
+  display: flex;
+}
+.breakfast-list{
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 6rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.breakfast-img{
+   height: 15rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+.breakfast{
+      display: block;
+}
 
 /* This logo section is for the CollegCheapEats heading */
 header .logo{
