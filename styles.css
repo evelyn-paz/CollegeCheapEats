@@ -79,6 +79,7 @@ header{
 }
 /* ---------breakfast--------- */
 .breakfast-home{
+    display: inline;
     text-align: center;
     font-size: xx-large;
     color: black;
@@ -110,7 +111,41 @@ breakfast-home .h1{
 .breakfast{
       display: block;
 }
-
+/* --------French toast------ */
+.frenchtoast-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.ingrediants{
+    position: flex;
+}
+.instuctions{
+    display: grid;
+    text-align: right;
+}
+/* Vertical line, that splits txt */
+.vertical{
+    border-left: 6px solid black;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    padding-top: 30px;
+}
+.split{
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    top: 90;
+    padding-top: 30px;
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
 /* This logo section is for the CollegCheapEats heading */
 header .logo{
     font-size: 2rem;
