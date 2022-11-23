@@ -1,0 +1,77 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <meta http-equiv="refresh" content="5">
+
+    <style>
+        .formBox{
+            padding: 0.5rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="formBox">
+            <label for="useremail">Email Address</label>
+            <input type="text" id="useremail" placeholder="Email Address"/>
+        </div>
+        <div class="formBox">
+            <label for="usrname">Enter First</label>
+            <input type="text" id="usrname" placeholder="First Name "/>
+        </div>
+      
+   
+      
+      
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="password" required>
+  
+      <label for="password-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="password-repeat" id="password-repeat" required>
+      <hr>
+      
+       <button type="submit" class="signupbtn"><a href="loggedin.html">Register</a></button> 
+      
+    <div class="back to main">
+      <p>Already have an account? <a href="main.html">Log In</a>.</p>
+  </div>
+        <div id="login">
+            <pre></pre>
+        </div>
+    </form>
+    <script>
+        let usremails = [];
+     
+        const addemail = (ev)=>{
+            ev.preventDefault();  // stop the form submitting
+            let usremail = {
+                id: Date.now(),
+                email: document.getElementById('useremail').value,
+            }
+            usremails.push(usremail);
+            document.forms[0].reset(); 
+        }
+          let name = [];
+     
+        const addname = (ev)=>{
+            ev.preventDefault();  // stop the form submitting
+            let names = {
+                id: Date.now(),
+                email: document.getElementById('usrname').value,
+            }
+            names.push(name);
+            document.forms[0].reset();    
+        }
+   
+    </script>
+   
+  
+
+  </body>
+</html>
