@@ -1,0 +1,72 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+   
+  
+ </head>
+ <body>
+   
+   <h1> Your Account</h1>    
+   <h2>
+     Email: Existing email should pop up
+     Name: Registered email should pop up
+ </h2>
+   
+   <h3>Change Details Below</h3>
+   <form>
+         <div class="formBox">
+             <label for="useremail"> Change Email Address</label>
+             <input type="text" id="useremail" placeholder="Email Address"/>
+         </div>
+         <div class="formBox">
+             <label for="usrname">Change First Name</label>
+             <input type="text" id="usrname" placeholder="First Name "/>
+         </div>
+       
+    
+       
+       
+       <label for="psw"><b> Change Password</b></label>
+       <input type="password" placeholder="Enter Password" name="password" id="password" required>
+   
+       <label for="password-repeat"><b>Change Password</b></label>
+       <input type="password" placeholder="Repeat Password" name="password-repeat" id="password-repeat" required>
+       <hr>
+       
+        <button type="submit" class="signupbtn"><a href="loggedin.html">Update</a></button> 
+       
+     
+     </form>
+     <script>
+         let usremails = [];
+      
+         const addemail = (ev)=>{
+             ev.preventDefault();  // stop the form submitting
+             let usremail = {
+                 id: Date.now(),
+                 email: document.getElementById('useremail').value,
+             }
+             usremails.push(usremail);
+             document.forms[0].reset(); 
+         }
+           let name = [];
+      
+         const addname = (ev)=>{
+             ev.preventDefault();  // stop the form submitting
+             let names = {
+                 id: Date.now(),
+                 email: document.getElementById('usrname').value,
+             }
+             names.push(name);
+             document.forms[0].reset();    
+         }
+    
+     </script>
+  </body>
+ </html>
