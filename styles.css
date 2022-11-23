@@ -56,7 +56,7 @@ header{
   }
 
 .recipe-img{
-    height: 15rem;
+    height: 10rem;
     border-radius: 0.25rem;
     margin-bottom: 1rem;
 }
@@ -79,7 +79,7 @@ header{
 }
 /* ---------breakfast--------- */
 .breakfast-home{
-    min-height: 100vh;
+    min-height: 80vh;
     display: inline;
     text-align: center;
     font-size: xx-large;
@@ -120,6 +120,12 @@ breakfast-home .h1{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+.eggtoast-img{
+    width: 30%;
+}
+.chickensalad-img{
+    width: 30%;
 }
 .ingrediants{
     position: flex;
