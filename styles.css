@@ -114,6 +114,10 @@ breakfast-home .h1{
 .breakfast{
       display: block;
 }
+/* -------Google Map-------- */
+.googleMap{
+    color: #000000;
+}
 /* --------French toast------ */
 .frenchtoast-img{
     display: block;
