@@ -127,6 +127,11 @@ breakfast-home .h1{
 .chickensalad-img{
     width: 30%;
 }
+.alfredo-img{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .ingrediants{
     position: flex;
 }
